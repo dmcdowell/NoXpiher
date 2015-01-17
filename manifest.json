@@ -1,15 +1,19 @@
 {
   "manifest_version": 2,
-
   "name": "NoXpiher",
-  "description": "This extension blocks any posts from Xpiher on the current page.",
-  "version": "1.0",
+  "version": "0.0.1",
+
+  "description": "Blocks any posts from Xpiher on the Darkfall forums.",
+  "short_name": "NoXpiher",
 
   "browser_action": {
-    "default_icon": "icon.png",
     "default_popup": "popup.html",
 	"default_title": "NoXpiher"
   },
+  "icons": { "16": "icon16.png",
+			"19": "icon19.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
   "content_scripts": [
         {
             "matches": ["*://forums.darkfallonline.com/*"],
@@ -18,7 +22,5 @@
         }
     ],
   "permissions": [
-	"tabs", "http://forums.darkfallonline.com/*",
-			"https://forums.darkfallonline.com/*"
   ]
 }

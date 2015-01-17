@@ -1,4 +1,4 @@
-// Copyright (c) 2015 David McDowell
+// Copyright (c) 2015 dmcdowell
 
 function noXpiher() {
     var aTags = document.getElementsByTagName("a");
